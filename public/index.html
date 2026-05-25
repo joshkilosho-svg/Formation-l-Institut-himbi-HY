@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inscription - Institut Himbi</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Institut Himbi</h1>
+      <p class="tag">Formations : Arduino • Web • PCB • Win PLC</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Inscription aux formations</h2>
+      <p>Remplissez ce formulaire pour vous inscrire à la session. Nous vous contacterons par email.</p>
+    </section>
+
+    <section class="form-card">
+      <form id="registrationForm">
+        <div class="row">
+          <label for="name">Nom complet</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="row two-cols">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div>
+            <label for="phone">Téléphone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+        </div>
+
+        <div class="row">
+          <label>Choisissez les modules</label>
+          <div class="modules">
+            <label><input type="checkbox" name="modules" value="Arduino"> Arduino</label>
+            <label><input type="checkbox" name="modules" value="Web"> Web</label>
+            <label><input type="checkbox" name="modules" value="PCB"> PCB</label>
+            <label><input type="checkbox" name="modules" value="Win PLC"> Win PLC</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="message">Message (optionnel)</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="row actions">
+          <button type="submit" id="submitBtn">S'inscrire</button>
+          <div id="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="notes">
+      <h3>Informations</h3>
+      <ul>
+        <li>Les données sont stockées en toute sécurité.</li>
+        <li>Vous recevrez un email de confirmation après traitement.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Institut Himbi - Tous droits réservés</div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

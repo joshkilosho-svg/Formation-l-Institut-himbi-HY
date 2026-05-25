@@ -1,3 +1,5 @@
 node_modules/
 .env
-registrations.json
+registrations.db
+npm-debug.log
+.DS_Store
