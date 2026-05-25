@@ -1,0 +1,32 @@
+/* styles.css - design responsive et professionnel */
+:root{
+  --primary:#0b6efd;
+  --muted:#6b7280;
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --radius:10px;
+  --max-width:960px;
+  --container-pad:16px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#111}
+.container{max-width:var(--max-width); margin:0 auto; padding:24px}
+.site-header{background:linear-gradient(90deg,var(--primary),#4f46e5); color:#fff; padding:24px 0}
+.site-header h1{margin:0; font-size:1.6rem}
+.site-header .tag{opacity:.9; margin-top:6px}
+.hero{padding:24px 0}
+.hero h2{margin:0 0 8px 0}
+.form-card{background:var(--card); border-radius:var(--radius); box-shadow:0 6px 18px rgba(15,23,42,0.08); padding:20px}
+.field-row{display:flex; flex-direction:column; margin-bottom:12px}
+.field-row label{font-weight:600; margin-bottom:6px}
+.field-row input, .field-row select, .field-row textarea{padding:10px 12px; border:1px solid #e6e9ef; border-radius:8px; font-size:0.95rem}
+.actions{display:flex; justify-content:flex-end; margin-top:8px}
+button{background:var(--primary); border:none; color:#fff; padding:10px 16px; border-radius:8px; cursor:pointer; font-weight:600}
+button:disabled{opacity:.6; cursor:not-allowed}
+#formMessage{margin-top:12px; font-weight:600}
+.info{margin-top:16px; color:var(--muted)}
+.site-footer{padding:18px 0; text-align:center; color:var(--muted)}
+@media (min-width:720px){
+  .field-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .field-row.inline{flex-direction:column}
+}
